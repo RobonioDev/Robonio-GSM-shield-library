@@ -19,7 +19,7 @@ void setup() {
   delay(2000);
   Serial.println("the system is working");
   Robonio.smsSend(PhoneNumber, "system opened.");
-
+}
 void loop() {
   smsText = Robonio.smsRead(1);
   if (smsText.indexOf("OK") != -1) {
@@ -28,7 +28,7 @@ void loop() {
       Serial.println(smsNumber);
       smsText.toUpperCase();
 
-      if (smsMetni.indexOf("temperature?") != -1) {
+      if (smsText.indexOf("temperature?") != -1) {
         Serial.println("SMS arrived");
         String temperature = String(analogRead(LM35_pin) * 0.48828125);
         String temperature2 = temperature + " degree.";
