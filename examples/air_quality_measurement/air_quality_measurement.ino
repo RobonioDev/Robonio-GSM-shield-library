@@ -32,7 +32,7 @@ void loop() {
       if (smsText.indexOf("WEATHER?") != -1 || smsText.indexOf("QUALITY?") != -1 || smsText.indexOf("POLLUTION?") != -1) {
         Serial.println("SMS arrived");
         String gas = String(analogRead(sensor_pin) / 10,23);
-        String gaz2 = "WEATHER %" + gas + " dirty.";
+        String gas2 = "WEATHER %" + gas + " dirty.";
         char gasSMS2[] = "";
         gas2.toCharArray(gasSMS2, 30);
         Serial.println(gasSMS2);
