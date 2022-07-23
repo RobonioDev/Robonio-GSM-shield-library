@@ -5,12 +5,10 @@ String smsText, smsNumber;
 #define LM35_pin A0
 
 void setup() {
- /*
+ 
   digitalWrite(7, HIGH);
   delay(3000);
   digitalWrite(7, LOW);
- */
- // Delete the " /* and */ " above to automatically start the GSM shield
   Robonio.start();
   delay(2000);
   Serial.begin(9600);
