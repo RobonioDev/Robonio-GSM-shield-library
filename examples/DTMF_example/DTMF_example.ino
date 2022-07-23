@@ -37,12 +37,12 @@ void loop() {
     if (incoming.indexOf("DTMF: 1") != -1) {
       Serial.println("Pressed 1, LED turned on");
       digitalWrite(LED_pin, HIGH);
-      Robonio.smsGonder(PhoneNumber, "LED opened");
+      Robonio.smsSend(PhoneNumber, "LED opened");
     }
     else if (incoming.indexOf("DTMF: 0") != -1) {
       Serial.println("0 pressed, LED off");
       digitalWrite(LED_pin, LOW);
-      Robonio.smsGonder(PhoneNumber, "LED closed");
+      Robonio.smsSend(PhoneNumber, "LED closed");
     }
   }
 }
