@@ -1,0 +1,49 @@
+#######################################
+# Syntax Coloring Map For RobonioGSM
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+RobonioGSM	KEYWORD1
+Robonio 	KEYWORD1
+
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+
+
+# Methods for calling (KEYWORD2)
+#######################################
+callAnswer	KEYWORD2
+numberCall	KEYWORD2
+searchFinish 	KEYWORD2
+GetSearchStatus	KEYWORD2
+
+
+# Methods for Sms (KEYWORD2)
+#######################################
+smsSend		KEYWORD2
+smsRead		KEYWORD2 
+allSmsDelete	KEYWORD2
+NumberSmsRead	KEYWORD2
+
+# Methods for Module (KEYWORD2)
+#######################################
+Start			KEYWORD2 
+CarrierOpenProfile      KEYWORD2
+CarrierCloseProfile	KEYWORD2
+RTCtime		        KEYWORD2
+Date			KEYWORD2
+RTCupdate		KEYWORD2
+phoneSetFeature 	KEYWORD2
+signalQuality		KEYWORD2
+soundOpen               KEYWORD2
+
+# Methods for Module (KEYWORD3)
+#######################################
+smsText                 KEYWORD2
+smsNumber               KEYWORD2
