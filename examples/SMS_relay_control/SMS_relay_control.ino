@@ -6,12 +6,10 @@ String smsText, smsNumber;
 #define role2 3
 
 void setup() {
-  /*
+ 
   digitalWrite(7, HIGH);
   delay(3000);
   digitalWrite(7, LOW);
- */
- // Delete the " /* and */ " above to automatically start the GSM shield
   pinMode(role1, OUTPUT);
   pinMode(role2, OUTPUT);
   digitalWrite(role1, HIGH);
