@@ -34,7 +34,7 @@ void loop() {
       Serial.println(smsNumber);
       smsText.toUpperCase();
 
-      else if (smsText.indexOf("RELAY1OPEN") != -1) {
+      if (smsText.indexOf("RELAY1OPEN") != -1) {
         Serial.println("RELAY 1 OPENED");
         digitalWrite(role1, !HIGH);
         Robonio.smsSend(PhoneNumber, "RELAY 1 OPENED");
