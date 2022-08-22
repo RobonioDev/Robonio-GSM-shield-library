@@ -6,7 +6,7 @@ String smsText, smsNumber;
 #define role2 3
 
 void setup() {
- 
+  pinMode(7 ,OUTPUT);
   digitalWrite(7, HIGH);
   delay(3000);
   digitalWrite(7, LOW);
