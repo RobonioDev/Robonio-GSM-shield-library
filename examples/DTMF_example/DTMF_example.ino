@@ -5,7 +5,7 @@ RobonioGSM Robonio;
 extern SoftwareSerial SIM;
 
 void setup() {
-
+  pinMode(7 ,OUTPUT);
   digitalWrite(7, HIGH);
   delay(3000);
   digitalWrite(7, LOW);
