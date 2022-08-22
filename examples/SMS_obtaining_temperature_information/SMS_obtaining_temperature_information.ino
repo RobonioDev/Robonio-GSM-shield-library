@@ -5,7 +5,7 @@ String smsText, smsNumber;
 #define LM35_pin A0
 
 void setup() {
- 
+  pinMode(7 ,OUTPUT);
   digitalWrite(7, HIGH);
   delay(3000);
   digitalWrite(7, LOW);
