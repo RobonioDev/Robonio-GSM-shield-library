@@ -2,7 +2,7 @@
 SoftwareSerial Robonio(10, 11); // RX, TX
 
 void setup() {
-
+  pinMode(7 ,OUTPUT);
   digitalWrite(7, HIGH);
   delay(3000);
   digitalWrite(7, LOW);
