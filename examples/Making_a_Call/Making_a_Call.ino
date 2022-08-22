@@ -4,7 +4,7 @@ String smsText, smsNumber;
 #define PhoneNumber  "+90**********" //  Write down the number of the phone that will communicate with the GSM shield, putting the country code in front of it.
 
 void setup() {
-
+  pinMode(7 ,OUTPUT);
   digitalWrite(7, HIGH);
   delay(3000);
   digitalWrite(7, LOW);
