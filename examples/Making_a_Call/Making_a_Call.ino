@@ -20,7 +20,7 @@ void setup() {
 
 void loop() {
   Serial.print(PhoneNumber);
-  Serial.println(" araniyor...");
+  Serial.println("  calling...");
   Robonio.numberCall(PhoneNumber);
   delay(100000);//wait 100 seconds
 }
