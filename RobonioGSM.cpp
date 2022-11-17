@@ -190,7 +190,6 @@ bool RobonioGSM::allSmsDelete(){
 
 
 String RobonioGSM::RTCtime(){
-//void KapadokyaGSM::RTCzaman(int *day,int *month, int *year,int *hour,int *minute, int *second){
   SIM.print(F("at+cclk?\r\n"));
   // if respond with ERROR try one more time. 
   _tampon=_serialOku();
