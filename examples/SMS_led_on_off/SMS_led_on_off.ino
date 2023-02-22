@@ -5,6 +5,7 @@ String smsText, smsNumber;
 #define LED_pin 13
 
 void setup() {
+  pinMode(13 ,OUTPUT);
   pinMode(7 ,OUTPUT);
   digitalWrite(7, HIGH);
   delay(3000);
